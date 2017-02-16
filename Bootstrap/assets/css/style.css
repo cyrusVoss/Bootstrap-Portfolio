@@ -13,13 +13,6 @@ body {
 
 /*general*/
 
-/*.container {
-  clear: both;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 960px;
-}*/
-
 h1,
 h2,
 h3,
@@ -57,7 +50,6 @@ h3 {
 #masthead {
   position: fixed;
   z-index: 99;
-  margin: 0 0 30px;
   overflow: auto;
   width: 100%;
   color: #fff;
@@ -66,9 +58,8 @@ h3 {
 }
 
 #logo {
-  width: 250px;
+/*  width: 250px;*/
   height: 90px;
-  float: left;
   font-family: 'Georgia', Times, Times New Roman, serif;
   text-align: center;
   line-height: 90px;
@@ -84,7 +75,8 @@ h3 {
   margin-top: 25px;
 }*/
 
-/*nav li {
+nav li {
+  margin-top: 10px;
   display: inline-block;
   margin-left: 15px;
   padding-left: 15px;
@@ -93,12 +85,15 @@ h3 {
   line-height: 18px;
   border-left: 1px solid #efefef;
   margin-top: 20px;
-}*/
+}
 
-/*nav li:first-child {
+nav li:first-child {
   border-left: 0 none #efefef;
 }
-*/
+
+/*a {
+  color: #777;
+}*/
 
 /*footer*/
 
@@ -122,11 +117,9 @@ footer {
 
 .sidebar {
   padding: 30px;
-/*  width: 100%;
-  max-width: 270px;*/
-  float: left;
+ /* float: left;
   /*width: 100%;*/
-  /*margin-left: 10%;*/
+  /*margin-left: 5%;*/
   margin-bottom: 20px;
   background: #fff;
   border: 1px solid #ddd;
@@ -172,15 +165,17 @@ h3,
 
 .work {
   position: relative;
-  width: 274px;
-  overflow: auto;
-  float: left;
-  margin: 20px 0 25px;
+  width: 272px;
+  height: 272px;
+  overflow: none;
+  /*float: left;*/
+  /*margin: 20px 0 25px;*/
+  margin-left: 10px;
 }
 
-.work:nth-child(even) {
+/*.work:nth-child(even) {
   margin-right: 40px;
-}
+}*/
 
 .work img {
   width: 100%;
@@ -190,8 +185,8 @@ h3,
 
 .work h3 {
   position: absolute;
-  bottom: 20px;
-  margin-bottom: 0;
+  bottom: 30px;
+  margin-bottom: 20px;
   padding: 15px;
   width: 100%;
   color: #fff;
@@ -250,3 +245,29 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
+
+/*.navbar, .navbar-inverse {
+  border-radius: 0;
+  border: none;
+  margin-bottom: 0;
+  min-height: 80px;
+}
+
+.nav li {
+  display: inline;
+  color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #ffffff;
+  font-family: Lato;
+  font-size: 1.7em;
+  font-weight: 300;
+  padding: 30px 25px 33px 25px;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+  background-color: #444444;
+  transition: 0.7s all linear;
+  height: 100%;
+}*/
